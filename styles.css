@@ -1,0 +1,159 @@
+:root {
+  --primary-light: #f0e9f8;
+  --primary-lightmedium: #dac8ed;
+  --primary-medium: #975ecc;
+  --primary-dark: #7c3abc;
+  --primary-deepdark: #521e9d;
+  --secondary-color: #93cc5e;
+  --tertiary-color: #c43f7d;
+
+  --primary-font: 'Baloo', sans-serif;
+  --secondary-font: serif;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  filter: brightness(0.9);
+}
+
+input:hover {
+  background-color: rgba(255, 255, 255, 90%);
+}
+
+input:focus {
+  animation: pulsebg 1s ease-in-out infinite;
+}
+
+a {
+  color: var(--primary-light);
+}
+
+@keyframes pulsebg {
+  0% {
+    background-color: rgba(255, 255, 255, 90%);
+  }
+  70% {
+    background-color: rgba(255, 255, 255, 50%);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 90%);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid rgba(0, 0, 0, 30%); */
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  color: var(--primary-light);
+  background-image: linear-gradient(var(--primary-dark), var(--primary-lightmedium));
+  text-align: center;
+}
+
+.wrapper {
+  min-height: 100vh;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container {
+  width: max-content;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+main {
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+main>h1 {
+  color: var(--primary-lightmedium);
+  font-size: 4rem;
+  line-height: 5rem;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 30%);
+}
+
+.emoji-el {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  align-items: center;
+  justify-content: center;
+  grid-gap: 0 .5rem;
+}
+
+.emoji-el>span {
+  padding-top: .5rem;
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+main>.form {
+  display: grid;
+  grid-gap: 1.5rem;
+  margin-top: .5rem;
+}
+
+main>.form>.input-el {
+  padding: .75rem 1.25rem;
+  color: rgba(0, 0, 0, 70%);
+  font-size: 1.25rem;
+  border-radius: .4rem;
+  border: 0;
+  outline: 0;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 10%);
+}
+
+main>.form>.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .75rem;
+}
+
+main>.form>.buttons>button {
+  padding: .5rem 1.5rem;
+  font-family: 'Baloo', sans-serif;
+  font-size: 1.25rem;
+  color: var(--primary-light);
+  background-color: var(--primary-medium);
+  border-radius: .4rem;
+  border: 0;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 10%);
+}
+
+main>.form>.buttons>button:nth-child(3),
+main>.form>.buttons>button:nth-child(4) {
+  background-color: var(--tertiary-color);
+}
+
+footer {
+  padding: .5rem;
+  text-align: right;
+  color: rgba(0, 0, 0, 30%);
+}
+
