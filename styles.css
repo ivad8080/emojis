@@ -60,7 +60,7 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid rgba(0, 0, 0, 30%); */
+  outline: 1px solid rgba(0, 0, 0, 30%);
 }
 
 body {
@@ -113,6 +113,14 @@ main>h1 {
   line-height: 5rem;
 }
 
+@media (max-width: 439px) {
+  .emoji-el>span {
+    padding-top: .5rem;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
 main>.form {
   display: grid;
   grid-gap: 1.5rem;
@@ -133,6 +141,12 @@ main>.form>.buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: .75rem;
+}
+
+@media (max-width: 439px) {
+  main>.form>.buttons {
+    grid-template-columns: 1fr;
+  }
 }
 
 main>.form>.buttons>button {
