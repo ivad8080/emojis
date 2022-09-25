@@ -41,7 +41,7 @@ function addToEnd() {
     }
   } else {
     inputEl.value = ''
-    inputEl.placeholder = 'only emojis, one at time 🎉'
+    inputEl.placeholder = 'only emojis, one at time 😮‍💨'
   }
 }
 
