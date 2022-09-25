@@ -60,7 +60,7 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid rgba(0, 0, 0, 30%);
+  /* outline: 1px solid rgba(0, 0, 0, 30%); */
 }
 
 body {
